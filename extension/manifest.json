@@ -1,0 +1,1 @@
+{ "manifest_version": 3, "name": "Satr", "version": "0.1.0", "description": "A browser extension for blocking adult websites.", "permissions": [ "declarativeNetRequest" ], "action": { "default_title": "Satr" }, "declarative_net_request": { "rule_resources": [ { "id": "adult_blocklist", "enabled": true, "path": "rules.json" } ] } }
