@@ -21,8 +21,14 @@ jobs:
       - name: Run Satr
         run: python main.py
 
-      - name: Save generated blocklist
+       - name: Save generated hosts list
         uses: actions/upload-artifact@v4
         with:
           name: satr-hosts
           path: dist/satr-hosts.txt
+
+      - name: Save browser extension rules
+        uses: actions/upload-artifact@v4
+        with:
+          name: satr-extension-rules
+          path: extension/rules.json
