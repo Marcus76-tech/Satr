@@ -21,7 +21,7 @@ jobs:
       - name: Run Satr
         run: python main.py
 
-       - name: Save generated hosts list
+      - name: Save generated hosts list
         uses: actions/upload-artifact@v4
         with:
           name: satr-hosts
